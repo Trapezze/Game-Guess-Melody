@@ -35,7 +35,7 @@
             // 
             // btnPlay
             // 
-            this.btnPlay.Location = new System.Drawing.Point(472, 63);
+            this.btnPlay.Location = new System.Drawing.Point(149, 39);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(159, 96);
             this.btnPlay.TabIndex = 0;
@@ -44,16 +44,17 @@
             // 
             // btnParam
             // 
-            this.btnParam.Location = new System.Drawing.Point(472, 192);
+            this.btnParam.Location = new System.Drawing.Point(149, 168);
             this.btnParam.Name = "btnParam";
             this.btnParam.Size = new System.Drawing.Size(159, 96);
             this.btnParam.TabIndex = 1;
             this.btnParam.Text = "Settings";
             this.btnParam.UseVisualStyleBackColor = true;
+            this.btnParam.Click += new System.EventHandler(this.btnParam_Click);
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(472, 332);
+            this.btnExit.Location = new System.Drawing.Point(149, 308);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(159, 96);
             this.btnExit.TabIndex = 2;
@@ -65,7 +66,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(666, 550);
+            this.ClientSize = new System.Drawing.Size(437, 580);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnParam);
             this.Controls.Add(this.btnPlay);

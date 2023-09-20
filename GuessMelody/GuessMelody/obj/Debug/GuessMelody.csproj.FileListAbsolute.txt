@@ -1,0 +1,11 @@
+F:\VS\GuessMelody\GuessMelody\obj\Debug\GuessMelody.csproj.AssemblyReference.cache
+F:\VS\GuessMelody\GuessMelody\obj\Debug\GuessMelody.fMain.resources
+F:\VS\GuessMelody\GuessMelody\obj\Debug\GuessMelody.fParam.resources
+F:\VS\GuessMelody\GuessMelody\obj\Debug\GuessMelody.Properties.Resources.resources
+F:\VS\GuessMelody\GuessMelody\obj\Debug\GuessMelody.csproj.GenerateResource.cache
+F:\VS\GuessMelody\GuessMelody\obj\Debug\GuessMelody.csproj.CoreCompileInputs.cache
+F:\VS\GuessMelody\GuessMelody\bin\Debug\GuessMelody.exe.config
+F:\VS\GuessMelody\GuessMelody\bin\Debug\GuessMelody.exe
+F:\VS\GuessMelody\GuessMelody\bin\Debug\GuessMelody.pdb
+F:\VS\GuessMelody\GuessMelody\obj\Debug\GuessMelody.exe
+F:\VS\GuessMelody\GuessMelody\obj\Debug\GuessMelody.pdb
