@@ -19,6 +19,7 @@ namespace GuessMelody
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Victorina.Writeparam();
              this.Hide();
             //Скрываем Главное меню
         }
@@ -38,6 +39,9 @@ namespace GuessMelody
                 listBox1.Items.Clear();
                 //
                 listBox1.Items.AddRange(music_list);
+                //Предварительная очистка, для того чтобы при каждом запуске не добавалялись одни и те же композиции, то есть не засоряли память и не было путаницы среди композиций
+                Victorina.list.Clear();
+                Victorina.list.AddRange(music_list);
             }
             //Здесь описан процесс откуда программа будет брать музыку и какого формата
         }
