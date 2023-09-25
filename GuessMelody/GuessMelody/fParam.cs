@@ -19,6 +19,10 @@ namespace GuessMelody
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Victorina.allDirectories = cbAllDirectories.Checked;
+            Victorina.GameDureation = Convert.ToInt32(cbGameDuration.Text);
+            Victorina.MusicDuration = Convert.ToInt32(cbMusicDuration.Text);
+            Victorina.randomStart = cbRandomStart.Checked;
             Victorina.Writeparam();
              this.Hide();
             //Скрываем Главное меню
@@ -26,7 +30,15 @@ namespace GuessMelody
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            Set();
             this.Hide();
+        }
+        void Set()
+        {
+            cbAllDirectories.Checked = Victorina.allDirectories;
+            cbGameDuration.Text = Victorina.GameDureation.ToString();
+            cbMusicDuration.Text = Victorina.MusicDuration.ToString();
+            cbRandomStart.Checked = Victorina.randomStart;
         }
 
         private void btnSelectFolder_Click(object sender, EventArgs e)
@@ -36,6 +48,7 @@ namespace GuessMelody
             {
                 string[] music_list=System.IO.Directory.GetFiles(fbd.SelectedPath, "*.mp3", cbAllDirectories.Checked?System.IO.SearchOption.AllDirectories:System.IO.SearchOption.TopDirectoryOnly);
                 //Здесь создан обработчик для subfolers который обрабатывает если истина, если ложь то обработки нет
+                Victorina.lastFolder = fbd.SelectedPath;
                 listBox1.Items.Clear();
                 //
                 listBox1.Items.AddRange(music_list);
@@ -50,6 +63,11 @@ namespace GuessMelody
         {
             this.Close();
            //Логика для закрытия окна настроек. 
+        }
+
+        private void fParam_Load(object sender, EventArgs e)
+        {
+            Set();
         }
     }
 }

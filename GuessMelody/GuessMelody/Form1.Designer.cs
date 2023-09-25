@@ -73,6 +73,7 @@
             this.Controls.Add(this.btnPlay);
             this.Name = "fMain";
             this.Text = "Guess Melody";
+            this.Load += new System.EventHandler(this.fMain_Load);
             this.ResumeLayout(false);
 
         }

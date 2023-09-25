@@ -33,5 +33,11 @@ namespace GuessMelody
         {
             fg.ShowDialog();
         }
+
+        private void fMain_Load(object sender, EventArgs e)
+        {
+            Victorina.Readparam();
+            Victorina.ReadMusic();
+        }
     }
 }
